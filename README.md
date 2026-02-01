@@ -1,3 +1,8 @@
+<p align="center">
+     <img src="assets/images/icon.png" width="240" alt="icon" />
+</p>
+
+
 # Botanist
 
 Botanist is a mobile application that identifies plants using images.
