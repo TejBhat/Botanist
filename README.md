@@ -15,26 +15,28 @@ The app focuses on simplicity, privacy, and on-device AI, making plant identific
 
 **Frontend**
 
-React Native
+-React Native
 
-Expo
+-Expo
 
-TypeScript
+-TypeScript
 
-Expo Router
+-Expo Router
 
-React Native Paper
+-React Native Paper
 
 **AI / ML**
 
-TensorFlow Lite
+-TensorFlow Lite
 
-Pre-trained image classification model
+-Pre-trained image classification model
 
 **Device Features**
 
-Expo Camera
+-Expo Camera
 
-Image Picker
+-Image Picker
 
-AsyncStorage
+-AsyncStorage
+
+---
