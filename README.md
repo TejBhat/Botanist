@@ -11,9 +11,9 @@ The app focuses on simplicity, privacy, and on-device AI, making plant identific
 
 ---
 
-🛠 Tech Stack
+## 🛠 Tech Stack
 
-Frontend
+**Frontend**
 
 React Native
 
@@ -25,13 +25,13 @@ Expo Router
 
 React Native Paper
 
-AI / ML
+**AI / ML**
 
 TensorFlow Lite
 
 Pre-trained image classification model
 
-Device Features
+**Device Features**
 
 Expo Camera
 
