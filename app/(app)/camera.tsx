@@ -3,7 +3,7 @@ import { CameraView, useCameraPermissions } from "expo-camera";
 import { useState } from "react";
 import { router } from "expo-router";
 
-export default function CameraScreen() {
+export default function Camera() {
   const [permission, requestPermission] = useCameraPermissions();
   const [cameraRef, setCameraRef] = useState<any>(null);
 
