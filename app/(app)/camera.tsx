@@ -13,10 +13,10 @@ export default function Camera() {
 
   if (!permission.granted) {
     return (
-      <View style={style.permissionContainer}>
-        <Text style={style.text}>Camera permission required</Text>
-        <TouchableOpacity onPress={requestPermission} style={style.button}>
-          <Text style={style.buttonText}>Allow Camera</Text>
+      <View style={styles.permissionContainer}> {/* ISSUE FIX: Changed style to styles */}
+        <Text style={styles.text}>Camera permission required</Text> {/* ISSUE FIX: Changed style to styles */}
+        <TouchableOpacity onPress={requestPermission} style={styles.button}> {/* ISSUE FIX: Changed style to styles */}
+          <Text style={styles.buttonText}>Allow Camera</Text> {/* ISSUE FIX: Changed style to styles */}
         </TouchableOpacity>
       </View>
     );
@@ -26,23 +26,26 @@ export default function Camera() {
     if (cameraRef) {
       const photo = await cameraRef.takePictureAsync();
       console.log(photo.uri); // image path
-      router.back(); // later we’ll send image to AI
+      router.push({
+        pathname: "/(app)/loading",
+        params: { imageUri: photo.uri }
+      });
     }
   };
 
   return (
     <CameraView
-      style={style.camera}
+      style={styles.camera} // ISSUE FIX: Changed style to styles
       ref={(ref) => setCameraRef(ref)}
     >
-      <View style={style.controls}>
-        <TouchableOpacity onPress={takePhoto} style={style.captureButton} />
+      <View style={styles.controls}> {/* ISSUE FIX: Changed style to styles */}
+        <TouchableOpacity onPress={takePhoto} style={styles.captureButton} /> {/* ISSUE FIX: Changed style to styles */}
       </View>
     </CameraView>
   );
 }
 
-const style = StyleSheet.create({
+const styles = StyleSheet.create({ // ISSUE FIX: Changed style to styles for consistency
   camera: {
     flex: 1,
   },
