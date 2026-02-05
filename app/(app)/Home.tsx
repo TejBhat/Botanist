@@ -4,7 +4,7 @@ import Octicons from '@expo/vector-icons/Octicons';
 import { useRef, useState } from "react";
 import { router } from "expo-router";
 
-export default function HomeScreen(){
+export default function Home(){
           
     const [menuOpen, setMenuOpen]=useState(false);
     const slide=useRef(new Animated.Value(-250)).current;
@@ -27,7 +27,7 @@ export default function HomeScreen(){
                 </Pressable>
                 {menuOpen && <Pressable style={style.overlay} onPress={toggleMenu}/>}
                 <Animated.View style={[style.sideMenu,{transform:[{translateX:slide}]}]}>
-                    <Pressable style={style.menuItem} onPress={()=>{toggleMenu;router.push("/(app)/about")}}>
+                    <Pressable style={style.menuItem} onPress={()=>{toggleMenu();router.push("/about")}}>
                         <Text style={style.menuText}>About Botanist</Text>
                     </Pressable>
                     <Pressable>
@@ -37,7 +37,7 @@ export default function HomeScreen(){
                  <Text style={style.title}>Botanist</Text>
                 <Button mode="contained" style={style.button} 
                 contentStyle={style.buttontext} 
-                labelStyle={style.buttonLabel}>Take a photo</Button> {/*click the button, it goes to camera to take the photo*/}
+                labelStyle={style.buttonLabel} onPress={()=>router.push("/camera")}>Take a photo</Button> {/*click the button it goes to camera to take the photo*/}
             </ImageBackground>
     );
 }
