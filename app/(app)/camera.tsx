@@ -45,7 +45,7 @@ export default function Camera() {
   );
 }
 
-const styles = StyleSheet.create({ // ISSUE FIX: Changed style to styles for consistency
+const styles = StyleSheet.create({ 
   camera: {
     flex: 1,
   },
