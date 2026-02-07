@@ -13,10 +13,10 @@ export default function Camera() {
 
   if (!permission.granted) {
     return (
-      <View style={styles.permissionContainer}> {/* ISSUE FIX: Changed style to styles */}
-        <Text style={styles.text}>Camera permission required</Text> {/* ISSUE FIX: Changed style to styles */}
-        <TouchableOpacity onPress={requestPermission} style={styles.button}> {/* ISSUE FIX: Changed style to styles */}
-          <Text style={styles.buttonText}>Allow Camera</Text> {/* ISSUE FIX: Changed style to styles */}
+      <View style={styles.permissionContainer}> 
+        <Text style={styles.text}>Camera permission required</Text> 
+        <TouchableOpacity onPress={requestPermission} style={styles.button}> 
+          <Text style={styles.buttonText}>Allow Camera</Text> 
         </TouchableOpacity>
       </View>
     );
@@ -35,11 +35,11 @@ export default function Camera() {
 
   return (
     <CameraView
-      style={styles.camera} // ISSUE FIX: Changed style to styles
+      style={styles.camera} 
       ref={(ref) => setCameraRef(ref)}
     >
-      <View style={styles.controls}> {/* ISSUE FIX: Changed style to styles */}
-        <TouchableOpacity onPress={takePhoto} style={styles.captureButton} /> {/* ISSUE FIX: Changed style to styles */}
+      <View style={styles.controls}>
+        <TouchableOpacity onPress={takePhoto} style={styles.captureButton} /> 
       </View>
     </CameraView>
   );
