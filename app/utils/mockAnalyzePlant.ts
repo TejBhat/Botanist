@@ -1,4 +1,3 @@
-// ISSUE FIX: Added missing import
 import { PLANTS } from "../../data/plants";
 
 // ISSUE FIX: Added proper type definition for return value
