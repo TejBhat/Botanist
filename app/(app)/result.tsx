@@ -41,7 +41,6 @@ export default function ResultScreen() {
         <Text style={styles.label}>Benefits</Text>
         <Text style={styles.value}>{plant.benefits}</Text>
 
-        {/* ISSUE FIX: Changed plant.accuracy to confidence param since accuracy doesn't exist in PLANTS data */}
         <Text style={styles.accuracy}>
           Identification Confidence: {confidence}%
         </Text>
