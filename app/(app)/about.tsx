@@ -6,7 +6,7 @@ import { black, white } from "react-native-paper/lib/typescript/styles/themes/v2
 export default function AboutScreen() {
   
   const openPrivacyPolicy = async () => {
-    const url = "https://your-privacy-policy-url.com"; // Update this after hosting
+    const url = "https://your-privacy-policy-url.com";
     try {
       const supported = await Linking.canOpenURL(url);
       if (supported) {
