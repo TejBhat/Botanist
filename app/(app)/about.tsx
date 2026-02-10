@@ -37,7 +37,7 @@ export default function AboutScreen() {
         <View style={styles.logoContainer}>
           <View style={[styles.logoCircle, { }]}>
             <Image 
-              source={require('../../assets/images/icon.png')}
+              source={require('')}
               style={styles.logoImage}
               resizeMode="contain"
             />
