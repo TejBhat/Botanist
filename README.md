@@ -40,3 +40,5 @@ The app focuses on simplicity, privacy, and on-device AI, making plant identific
 - AsyncStorage
 
 ---
+
+work in progress!
